@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './global.css';
 
 export const metadata = {
   title: 'My Notes App',
@@ -15,8 +16,8 @@ export default function RootLayout({
       <body>
         <main>
           <nav>
-            <Link href="/"></Link>
-            <Link href="/notes"></Link>
+            <Link href="/">Home</Link>
+            <Link href="/notes">Notes</Link>
           </nav>
           {children}
         </main>
